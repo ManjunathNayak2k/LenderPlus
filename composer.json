@@ -1,0 +1,17 @@
+{
+    "name": "manjunath/test",
+    "description": "PHP Firebase",
+    "type": "project",
+    "license": "GNU3",
+    "authors": [
+        {
+            "name": "Manjunath-ubuntu",
+            "email": "nayakmanjunath2000@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "kreait/firebase-php": "5.x-dev",
+        "php": ">=7.2.0"
+    }
+}
