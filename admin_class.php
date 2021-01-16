@@ -256,7 +256,7 @@ Class Action {
 		}	
 		else
 		{
-			$check = $this->db->query("SELECT PaymentID FROM payments ORDER BY `payments` DESC LIMIT 1")->fetch_array();
+			$check = $this->db->query("SELECT PaymentID FROM payments ORDER BY PaymentID DESC LIMIT 1")->fetch_array();
 			$check1 = $check[0]+1;
 			$save = $this->db->query("INSERT INTO `payments`(`PaymentID`, `LoanID`, `LenderID`, `BorrowerID`, `PaymentDate`, `Amount`) VALUES ($check1,$loanID,$lID,$bID,STR_TO_DATE('$date', '%Y-%m-%d'),$total)");
 		}
